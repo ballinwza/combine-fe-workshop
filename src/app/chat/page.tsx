@@ -1,14 +1,9 @@
 import ChatRoom from '@/providers/chat'
 
-export default async function MassagePage() {
+export default async function ChatPage() {
     try {
-        // const response = await fetch('http://localhost:3001/leaderboard')
-        // const data = await response.json()
-
-        // console.log('data >> ', data)
         return (
             <div>
-                {/* Message : <MassageQueue /> */}
                 <ChatRoom />
             </div>
         )
