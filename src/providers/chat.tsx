@@ -15,7 +15,9 @@ const ChatRoom: FC = () => {
     const [socket, setSocket] = useState<WebSocket | null>(null)
 
     useEffect(() => {
-        const ws = new WebSocket('ws://localhost:8080/ws/chat/')
+        const ws = new WebSocket(
+            `ws://${process.env.NEXT_PUBLIC_BACKEND_SERVICE_URL}/ws/chat/`,
+        )
 
         ws.onopen = () => {
             console.log('Connected')

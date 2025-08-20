@@ -26,7 +26,7 @@ const Cache: FC = () => {
     const handleSave = async () => {
         try {
             const response = await fetch(
-                'http://localhost:8080/basic/set/cache',
+                `http://${process.env.NEXT_PUBLIC_BACKEND_SERVICE_URL}/basic/set/cache`,
                 {
                     method: 'POST',
                     headers: {

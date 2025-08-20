@@ -25,7 +25,9 @@ const Leaderboard: FC = () => {
     const [name, setName] = useState<string>('Hello world')
 
     const IncScore = async () => {
-        await fetch(`http://localhost:8080/leaderboard/save?username=${name}`)
+        await fetch(
+            `http://${process.env.NEXT_PUBLIC_BACKEND_SERVICE_URL}/leaderboard/save?username=${name}`,
+        )
     }
 
     const handleSubmit = () => {
