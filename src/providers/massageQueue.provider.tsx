@@ -4,7 +4,7 @@ import { FC, useEffect } from 'react'
 
 const MassageQueue: FC = () => {
     useEffect(() => {
-        const ws = new WebSocket('ws://localhost:3001/ws/test')
+        const ws = new WebSocket('ws://localhost:8080/ws/test')
 
         ws.onopen = () => {
             console.log('Connected')

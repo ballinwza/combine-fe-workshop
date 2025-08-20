@@ -25,7 +25,7 @@ const Leaderboard: FC = () => {
     const [name, setName] = useState<string>('Hello world')
 
     const IncScore = async () => {
-        await fetch(`http://localhost:3001/leaderboard/save?username=${name}`)
+        await fetch(`http://localhost:8080/leaderboard/save?username=${name}`)
     }
 
     const handleSubmit = () => {
@@ -33,7 +33,7 @@ const Leaderboard: FC = () => {
     }
 
     useEffect(() => {
-        const ws = new WebSocket('ws://localhost:3001/ws/leaderboard')
+        const ws = new WebSocket('ws://localhost:8080/ws/leaderboard')
 
         ws.onopen = () => {
             console.log('Connected')
