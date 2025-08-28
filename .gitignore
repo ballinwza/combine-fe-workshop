@@ -44,3 +44,4 @@ package-lock.json
 
 #sonar
 .scannerwork
+sonar-project.properties

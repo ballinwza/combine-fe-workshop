@@ -7,5 +7,9 @@
     "tailwindCSS.experimental.classRegex": [
         ["clsx\\(([^)]*)\\)", "'([^']*)'"],
         ["cn\\(([^)]*)\\)", "'([^']*)'"]
-    ]
+    ],
+    "sonarlint.connectedMode.project": {
+        "connectionId": "http-localhost-9000",
+        "projectKey": "nextjs-sonarqube-example-ts"
+    }
 }
